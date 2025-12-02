@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Flavors</title>
+    <style>
+        body { 
+            background: #f7f2fa; 
+            font-family: Arial; 
+            color: #555; 
+        }
+        #secret { 
+            display: none; 
+            width: 180px; 
+        }
+        #hover { 
+            background: #e8dff4; 
+            padding: 6px; 
+            width: 120px; 
+            cursor: pointer; 
+            text-align: center; 
+            font-weight: bold; 
+            border-radius: 6px;
+        }
+        img { 
+            width: 220px; 
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Favorite Treat: Ice Cream</h1>
+
+<p>Ice cream is a simple, sweet dessert that always hits the spot. After a long school day, it’s one of the easiest treats to enjoy and always feels refreshing. The cold, creamy texture makes it fun to eat no matter the season.</p>
+
+<p>There are so many flavors that everyone can find one they like. Some are rich, some are fruity, and some are just classics. Whether it’s in a cone or a cup, ice cream is one of those treats that makes people smile.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Strawberry_ice_cream_cone_%282%29.jpg">
+
+<ul>
+    <li>Vanilla Bean</li>
+    <li>Chocolate Fudge</li>
+    <li>Strawberry Sorbet</li>
+    <li>Mint Chip</li>
+</ul>
+
+<div id="hover">Secret Flavor</div>
+
+<img id="secret" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Ice_Cream_Scoops.jpg">
+
+<script>
+    const hoverArea = document.getElementById('hover');
+    const secretImage = document.getElementById('secret');
+
+    hoverArea.addEventListener('mouseover', () => {
+        secretImage.style.display = 'block';
+    });
+
+    hoverArea.addEventListener('mouseout', () => {
+        secretImage.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
