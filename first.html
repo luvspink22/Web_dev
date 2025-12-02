@@ -1,111 +1,118 @@
-<!--AH 6th Structure your site-->
+<!--AH 6th Finsh First Webpage-->
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML Basics</title>
-        <meta charset="UTF-8">
-        <style>
-            body {
-                background-color: #E0FFFF;
-                color: #191970;
-                font-family: 'Times New Roman', serif;
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-                padding: 15px;
-            }
-            
-            header {
-                padding: 10px 20px;
-                margin-bottom: 20px;
-                background-color: #4682B4;
-                border-radius: 8px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>All About Fruits</title>
+    <style>
+        body {
+            background-color: #E0FFFF;
+            color: #191970;
+            font-family: 'Times New Roman', serif;
+            padding: 15px;
+        }
 
-            main {
-                flex-grow: 1;
-                padding: 20px;
-                background-color: #f0ffff;
-                border-radius: 8px;
-            }
+        header {
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #4682B4;
+            border-radius: 8px;
+        }
 
-            h1 {
-                text-align: center;
-                color: #FFB6C1;
-                margin: 0;
-            }
-            
-            h2 {
-                color: #4682B4;
-                margin-top: 25px;
-                border-bottom: 2px solid #FFB6C1;
-                padding-bottom: 5px;
-            }
-            
-            p {
-                margin-bottom: 15px;
-                line-height: 1.6;
-            }
+        h1 {
+            text-align: center;
+            color: #FFB6C1;
+            margin: 0;
+        }
 
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 10px 0;
-            }
+        h2 {
+            color: #4682B4;
+            margin-top: 25px;
+            border-bottom: 2px solid #FFB6C1;
+            padding-bottom: 5px;
+        }
 
-            img {
-                width: 250px;
-                height: auto;
-                border: 2px solid #FFB6C1;
-                margin: 15px;
-            }
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
 
-            ul {
-                padding-left: 40px;
-                margin-bottom: 20px;
-            }
+        ul {
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
 
-            a {
-                color: #FFB6C1;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>All About Fruits</h1>
-        </header>
+        a {
+            color: #FFB6C1;
+        }
 
-        <main>
-            <h2>So Many Kinds of Fruits</h2>
-            <p>Fruits come in all different shapes and sizes, and they all have their own textures and flavors. Some can be sweet, while others are sour or even bitter. My favorite thing about fruits is that in different parts of the world, you can find all kinds of them! Not only that, but fruits come in many colors and even mixtures of them. Some can be one solid color, while others have cool blends or gradients.</p>
-            
-            <p>With fruits, you never know what to expect. For example, the fruit called tamarind grows on trees. On the outside, it has a hard, brown shell with a smooth texture, and you can see that it contains little beads inside that change its shape. When you open it, the fruit is a rich dark brown. Sometimes it’s dry, sometimes it’s fresh. Most of the time it’s sour and bitter with a little sweetness, but sometimes it’s totally sweet, and when it is, it’s one of the best fruits to snack on! Fruits also interest me because you can use them in different kinds of dishes and drinks, especially desserts.</p>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+        }
 
-            <h2>Fruits Change Over Time</h2>
-            <p>Fruits weren’t always like the ones you see in stores today. That’s another reason they interest me. A long time ago, fruits used to look completely different from the ones we know now.</p>
-            
-            <p>For example, bananas used to have big black seeds and not much fruit to eat. Over time, people learned how to farm them, allowing us to enjoy the sweet and more tasty bananas we have today.</p>
+        img {
+            width: 250px;
+            height: auto;
+            border: 2px solid #FFB6C1;
+            margin: 15px;
+        }
 
-            <h2>My top 5 Favorite fruits!</h2>
+        #extraSection {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All About Fruits</h1>
+    </header>
 
-            <ul>
-                <li>1-Pink guavas</li>
-                <li>2-Lychee</li>
-                <li>3-Tamarind</li>
-                <li>4-Mangos</li>
-                <li>5-Raspberries</li>
-            </ul>
+    <main>
+        <h2>So Many Kinds of Fruits</h2>
+        <p>Fruits come in all different shapes and sizes, and they all have their own textures and flavors. Some can be sweet, while others are sour or even bitter. My favorite thing about fruits is that in different parts of the world, you can find all kinds of them! Not only that, but fruits come in many colors and even mixtures of them.</p>
+        <p>With fruits, you never know what to expect. For example, the fruit called tamarind grows on trees. On the outside, it has a hard, brown shell with a smooth texture. Inside, it contains little beads. When you open it, the fruit is dark brown and can be dry or fresh, sour or sweet.</p>
 
-            <div class="gallery">
-                <img src="https://live.staticflickr.com/65535/31781576943_18186aaa19_b.jpg" alt="What pink guavas look on the inside">
-                <img src="https://images.pexels.com/photos/5945613/pexels-photo-5945613.jpeg" alt="Yummy raspberries">
-            </div>
+        <h2>Fruits Change Over Time</h2>
+        <p>Fruits weren’t always like the ones you see in stores today. A long time ago, bananas used to have big black seeds and not much fruit to eat. Over time, people learned how to farm them, giving us sweet and tasty bananas.</p>
 
-            <p>
-                Take a look at rare fruits!: <a href="https://www.jurassicfruit.com/en/collections/fruit">Exotic Fruits in season</a>
-            </p>
-        </main>
-    </body>
+        <h2>My top 5 Favorite fruits!</h2>
+        <ul>
+            <li>Pink guavas</li>
+            <li>Lychee</li>
+            <li>Tamarind</li>
+            <li>Mangos</li>
+            <li>Raspberries</li>
+        </ul>
+
+        <div class="fruit">
+            <img 
+                src="https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJtYW5nb19tYW5naWZlcmFfaW5kaWNhX2Fib3V0XzItaW1hZ2Uta3liZDgxODMuanBn.jpg" 
+                alt="Fruit"
+                onmouseover="this.src='https://www.shutterstock.com/shutterstock/videos/1110379889/thumb/1.jpg?ip=x480'"
+                onmouseout="this.src='https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJtYW5nb19tYW5naWZlcmFfaW5kaWNhX2Fib3V0XzItaW1hZ2Uta3liZDgxODMuanBn.jpg'"
+            >
+        </div>
+
+        <p>Take a look at rare fruits!: <a href="https://www.jurassicfruit.com/en/collections/fruit">Exotic Fruits in season</a></p>
+
+        <div id="extraSection">
+            <p>Here is a cool extra fruit fact! Dragon fruit is actually a type of cactus, and it grows beautiful flowers before the fruit forms.</p>
+            <img src="https://live-production.wcms.abc-cdn.net.au/584e83514334c509345b72a80720df39?impolicy=wcms_crop_resize&cropH=432&cropW=768&xPos=0&yPos=0&width=862&height=485" alt="Dragon fruit">
+        </div>
+
+        <button onclick="toggleExtra()">Show / Hide Extra Fruit Info</button>
+    </main>
+
+    <script>
+        function toggleExtra() {
+            let section = document.getElementById("extraSection");
+            section.style.display = section.style.display === "none" ? "block": "none";
+        }
+    </script>
+</body>
 </html>
