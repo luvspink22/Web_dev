@@ -28,8 +28,6 @@
             a {
                 color: #9275A4;
             }
-        
-
         </style>
     </head>
     <body>
@@ -40,7 +38,6 @@
         <p>When visiting you can enjoy activities such as hiking, bird watching, and photography. The island is mostly famous for its pink lake sections caused by salt-loving bacteria.</p>
         <p>It's also home to several historical sites, including old mining ruins and Native American petroglyphs. Overall, Stansbury Island is a great place for a staycation and nature lovers.</p>
 
-
         <h2>Reasons why you should go</h2>
 
         <ul>
@@ -48,11 +45,38 @@
             <li>Scenic views</li>
             <li>Interesting wildlife</li>
             <li>Peaceful environment</li>
-
         </ul>
 
-    <img src="https://onlybyland.com/wp-content/uploads/2025/07/Aerial-view-of-Utahs-bright-pink-lake-showing-color-patterns-e1753183551829.jpeg" alt=" More of the pink lake" style="width:20%;">
-    <img src="https://justsimplywander.com/wp-content/uploads/2022/07/IMG_9280-2-1024x683.jpg" alt="View of the mountains in Stansbury" id="hover-image" style="width:20%;">
-    <img src="https://justsimplywander.com/wp-content/uploads/2022/07/IMG_9304-683x1024.jpg" alt= "Pink lake" style="display: none;">
+        <img src="https://onlybyland.com/wp-content/uploads/2025/07/Aerial-view-of-Utahs-bright-pink-lake-showing-color-patterns-e1753183551829.jpeg" alt=" More of the pink lake" style="width:20%;">
+        <img src="https://justsimplywander.com/wp-content/uploads/2022/07/IMG_9280-2-1024x683.jpg" alt="View of the mountains in Stansbury" id="hover-image" style="width:20%;">
+        <img src="https://justsimplywander.com/wp-content/uploads/2022/07/IMG_9304-683x1024.jpg" alt= "Pink lake" id="hidden-img" style="display: none;">
+
+        <p id="extra" style="display:none;">More about Stansbury Island.</p>
+        <button id="toggle">Show More</button>
+
+        <script>
+            const toggle = document.getElementById("toggle");
+            const img = document.getElementById("hidden-img");
+            const extra = document.getElementById("extra");
+            toggle.onclick = function() {
+                if (img.style.display === "none") {
+                    img.style.display = "block";
+                    extra.style.display = "block";
+                    toggle.textContent = "Hide";
+                } else {
+                    img.style.display = "none";
+                    extra.style.display = "none";
+                    toggle.textContent = "Show More";
+                }
+            };
+            const hover = document.getElementById("hover-image");
+            hover.onmouseover = function() {
+                hover.style.transform = "scale(1.1)";
+            };
+            hover.onmouseout = function() {
+                hover.style.transform = "scale(1)";
+            };
+        </script>
+
     </body>
 </html>
